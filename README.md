@@ -1,2 +1,4 @@
 # Kalman-Filter-Visualisation
-simple python code to visualize what the Kalman filter does 
+
+Simple python code to visualize what the Kalman filter does. 
+
