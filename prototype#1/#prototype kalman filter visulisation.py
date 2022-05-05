@@ -40,25 +40,24 @@ def generate_sin_wave(n):
     """
     this function is used to generate a sin wave
     to change the frequency of the sin wave, change the value of
-    n's multiplier in the generate_sin_wave_with_noise function
+    n in the generate_sin_wave_with_noise function
     """
     x = np.linspace(0,10,n)
     y = np.sin(x)
     return x,y
 
-def noise(y):
+def noise(z):
     """
     function to generate noise
-    to change the amplitude of the noise, change the value of 
-    n's multiplier in the generate_sin_wave_with_noise function
+    to change the amplitude of the noise change n
     """
-    return np.random.normal(0,1,n)
+    return np.random.normal(0,1,z)
 
 def genrate_sin_wave_with_noise(n):
-    n = n*1
+    n = n
     x,y = generate_sin_wave(n)
-    y = n*1
-    y = y + noise(y)
+    z = n
+    y = y + noise(z)
     return x,y
 
 genrate_sin_wave_with_noise(100)
