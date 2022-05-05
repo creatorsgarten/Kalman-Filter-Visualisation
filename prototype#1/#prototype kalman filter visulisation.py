@@ -53,13 +53,3 @@ mp.pyplot.plot(x,y,'r.',label='measurement')
 mp.pyplot.plot(x,x_estimate,'b-',label='estimate')
 mp.pyplot.legend()
 mp.pyplot.show()
-
-def read_data_from_csv(filename):
-    data = []
-    with open(filename, 'r') as f:
-        for line in f:
-            data.append(float(line))
-    return data
-
-data = read_data_from_csv('data.csv')
-mp.pyplot.plot(data)  
